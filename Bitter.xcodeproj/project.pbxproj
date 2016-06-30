@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6176D85C853301776C40AAAA /* Pods_BitterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7040EE9EE38A8FDF8EAAFDBD /* Pods_BitterUITests.framework */; };
+		9A3BEBFE3602754A7F1E8DC1 /* Pods_BitterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C766D8019118EF57AAEC609 /* Pods_BitterTests.framework */; };
+		CE5AABA9F7B05F7A526308B9 /* Pods_Bitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A5B7A35253DA4BDB0EF8DE /* Pods_Bitter.framework */; };
+		ED201C2F1D231AFE005888E6 /* TweetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED201C2E1D231AFE005888E6 /* TweetsViewController.swift */; };
+		ED201C311D234263005888E6 /* TweetTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED201C301D234263005888E6 /* TweetTableView.swift */; };
+		ED201C331D234318005888E6 /* TweetViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED201C321D234318005888E6 /* TweetViewCell.swift */; };
 		ED4A8D821D21B7E3009A3937 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A8D811D21B7E3009A3937 /* AppDelegate.swift */; };
 		ED4A8D841D21B7E3009A3937 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A8D831D21B7E3009A3937 /* ViewController.swift */; };
 		ED4A8D871D21B7E3009A3937 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4A8D851D21B7E3009A3937 /* Main.storyboard */; };
@@ -14,6 +20,10 @@
 		ED4A8D8C1D21B7E3009A3937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4A8D8A1D21B7E3009A3937 /* LaunchScreen.storyboard */; };
 		ED4A8D971D21B7E3009A3937 /* BitterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A8D961D21B7E3009A3937 /* BitterTests.swift */; };
 		ED4A8DA21D21B7E3009A3937 /* BitterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A8DA11D21B7E3009A3937 /* BitterUITests.swift */; };
+		ED98965E1D21C44D0012939D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED98965D1D21C44D0012939D /* LoginViewController.swift */; };
+		ED9896631D21DAD30012939D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9896621D21DAD30012939D /* User.swift */; };
+		ED9896651D21DAFB0012939D /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9896641D21DAFB0012939D /* Tweet.swift */; };
+		ED9896671D21E7940012939D /* TwitterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9896661D21E7940012939D /* TwitterClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		41135003B43BB3D3D9405175 /* Pods-Bitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bitter/Pods-Bitter.release.xcconfig"; sourceTree = "<group>"; };
+		5C766D8019118EF57AAEC609 /* Pods_BitterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7040EE9EE38A8FDF8EAAFDBD /* Pods_BitterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		762B997633154272DCE5D20C /* Pods-BitterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitterUITests/Pods-BitterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		832FDFE577637898116F9113 /* Pods-BitterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitterUITests/Pods-BitterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8AC8A0560BF908062266A6E0 /* Pods-BitterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitterTests/Pods-BitterTests.release.xcconfig"; sourceTree = "<group>"; };
+		99F18DCBBCEC8FC41BA741EA /* Pods-Bitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bitter/Pods-Bitter.debug.xcconfig"; sourceTree = "<group>"; };
+		BCA5DDE28B8DBCD4F8582FF5 /* Pods-BitterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitterTests/Pods-BitterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0A5B7A35253DA4BDB0EF8DE /* Pods_Bitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED201C2E1D231AFE005888E6 /* TweetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetsViewController.swift; sourceTree = "<group>"; };
+		ED201C301D234263005888E6 /* TweetTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableView.swift; sourceTree = "<group>"; };
+		ED201C321D234318005888E6 /* TweetViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetViewCell.swift; sourceTree = "<group>"; };
 		ED4A8D7E1D21B7E2009A3937 /* Bitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4A8D811D21B7E3009A3937 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED4A8D831D21B7E3009A3937 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +69,10 @@
 		ED4A8D9D1D21B7E3009A3937 /* BitterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4A8DA11D21B7E3009A3937 /* BitterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitterUITests.swift; sourceTree = "<group>"; };
 		ED4A8DA31D21B7E3009A3937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED98965D1D21C44D0012939D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ED9896621D21DAD30012939D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ED9896641D21DAFB0012939D /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		ED9896661D21E7940012939D /* TwitterClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5AABA9F7B05F7A526308B9 /* Pods_Bitter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A3BEBFE3602754A7F1E8DC1 /* Pods_BitterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +96,52 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6176D85C853301776C40AAAA /* Pods_BitterUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		596BC4FE1D62C67CE6C5A47E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99F18DCBBCEC8FC41BA741EA /* Pods-Bitter.debug.xcconfig */,
+				41135003B43BB3D3D9405175 /* Pods-Bitter.release.xcconfig */,
+				BCA5DDE28B8DBCD4F8582FF5 /* Pods-BitterTests.debug.xcconfig */,
+				8AC8A0560BF908062266A6E0 /* Pods-BitterTests.release.xcconfig */,
+				832FDFE577637898116F9113 /* Pods-BitterUITests.debug.xcconfig */,
+				762B997633154272DCE5D20C /* Pods-BitterUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ABFD2AA031DD701D8D3EE261 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0A5B7A35253DA4BDB0EF8DE /* Pods_Bitter.framework */,
+				5C766D8019118EF57AAEC609 /* Pods_BitterTests.framework */,
+				7040EE9EE38A8FDF8EAAFDBD /* Pods_BitterUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED201C341D234334005888E6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ED201C321D234318005888E6 /* TweetViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		ED201C351D234341005888E6 /* Table Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED201C301D234263005888E6 /* TweetTableView.swift */,
+			);
+			name = "Table Views";
+			sourceTree = "<group>";
+		};
 		ED4A8D751D21B7E2009A3937 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +149,8 @@
 				ED4A8D951D21B7E3009A3937 /* BitterTests */,
 				ED4A8DA01D21B7E3009A3937 /* BitterUITests */,
 				ED4A8D7F1D21B7E2009A3937 /* Products */,
+				596BC4FE1D62C67CE6C5A47E /* Pods */,
+				ABFD2AA031DD701D8D3EE261 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +167,12 @@
 		ED4A8D801D21B7E3009A3937 /* Bitter */ = {
 			isa = PBXGroup;
 			children = (
+				ED201C351D234341005888E6 /* Table Views */,
+				ED201C341D234334005888E6 /* Cell */,
+				ED9896611D21DA930012939D /* API */,
+				ED9896601D21DA7B0012939D /* Models */,
+				ED98965F1D21C4920012939D /* View Controllers */,
 				ED4A8D811D21B7E3009A3937 /* AppDelegate.swift */,
-				ED4A8D831D21B7E3009A3937 /* ViewController.swift */,
 				ED4A8D851D21B7E3009A3937 /* Main.storyboard */,
 				ED4A8D881D21B7E3009A3937 /* Assets.xcassets */,
 				ED4A8D8A1D21B7E3009A3937 /* LaunchScreen.storyboard */,
@@ -125,6 +199,33 @@
 			path = BitterUITests;
 			sourceTree = "<group>";
 		};
+		ED98965F1D21C4920012939D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED98965D1D21C44D0012939D /* LoginViewController.swift */,
+				ED4A8D831D21B7E3009A3937 /* ViewController.swift */,
+				ED201C2E1D231AFE005888E6 /* TweetsViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		ED9896601D21DA7B0012939D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED9896621D21DAD30012939D /* User.swift */,
+				ED9896641D21DAFB0012939D /* Tweet.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		ED9896611D21DA930012939D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				ED9896661D21E7940012939D /* TwitterClient.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED4A8DA61D21B7E3009A3937 /* Build configuration list for PBXNativeTarget "Bitter" */;
 			buildPhases = (
+				A62AEDC80769E1F5EABD4E81 /* [CP] Check Pods Manifest.lock */,
 				ED4A8D7A1D21B7E2009A3937 /* Sources */,
 				ED4A8D7B1D21B7E2009A3937 /* Frameworks */,
 				ED4A8D7C1D21B7E2009A3937 /* Resources */,
+				228A69242856AFDC77E90A5A /* [CP] Embed Pods Frameworks */,
+				57D642673659B4B7B6B0347B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +253,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED4A8DA91D21B7E3009A3937 /* Build configuration list for PBXNativeTarget "BitterTests" */;
 			buildPhases = (
+				20B1E006901825CE60605E13 /* [CP] Check Pods Manifest.lock */,
 				ED4A8D8E1D21B7E3009A3937 /* Sources */,
 				ED4A8D8F1D21B7E3009A3937 /* Frameworks */,
 				ED4A8D901D21B7E3009A3937 /* Resources */,
+				06CA628D5B9AFE10DE88AC35 /* [CP] Embed Pods Frameworks */,
+				4A9DCE8B1D9A34136B9C7D02 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +274,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED4A8DAC1D21B7E3009A3937 /* Build configuration list for PBXNativeTarget "BitterUITests" */;
 			buildPhases = (
+				3545BA73355D3726CFD030EB /* [CP] Check Pods Manifest.lock */,
 				ED4A8D991D21B7E3009A3937 /* Sources */,
 				ED4A8D9A1D21B7E3009A3937 /* Frameworks */,
 				ED4A8D9B1D21B7E3009A3937 /* Resources */,
+				05A45AE74A075B7805FFF2F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +302,7 @@
 				TargetAttributes = {
 					ED4A8D7D1D21B7E2009A3937 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = LS8VE544J4;
 					};
 					ED4A8D911D21B7E3009A3937 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -251,12 +361,142 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05A45AE74A075B7805FFF2F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitterUITests/Pods-BitterUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		06CA628D5B9AFE10DE88AC35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitterTests/Pods-BitterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20B1E006901825CE60605E13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		228A69242856AFDC77E90A5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bitter/Pods-Bitter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3545BA73355D3726CFD030EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4A9DCE8B1D9A34136B9C7D02 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitterTests/Pods-BitterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57D642673659B4B7B6B0347B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bitter/Pods-Bitter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A62AEDC80769E1F5EABD4E81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED4A8D7A1D21B7E2009A3937 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED9896631D21DAD30012939D /* User.swift in Sources */,
+				ED9896651D21DAFB0012939D /* Tweet.swift in Sources */,
+				ED98965E1D21C44D0012939D /* LoginViewController.swift in Sources */,
+				ED201C311D234263005888E6 /* TweetTableView.swift in Sources */,
 				ED4A8D841D21B7E3009A3937 /* ViewController.swift in Sources */,
+				ED201C2F1D231AFE005888E6 /* TweetsViewController.swift in Sources */,
+				ED9896671D21E7940012939D /* TwitterClient.swift in Sources */,
+				ED201C331D234318005888E6 /* TweetViewCell.swift in Sources */,
 				ED4A8D821D21B7E3009A3937 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,28 +637,37 @@
 		};
 		ED4A8DA71D21B7E3009A3937 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99F18DCBBCEC8FC41BA741EA /* Pods-Bitter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Bitter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Facebook.com.Bitter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		ED4A8DA81D21B7E3009A3937 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41135003B43BB3D3D9405175 /* Pods-Bitter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Bitter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Facebook.com.Bitter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 		ED4A8DAA1D21B7E3009A3937 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCA5DDE28B8DBCD4F8582FF5 /* Pods-BitterTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BitterTests/Info.plist;
@@ -431,6 +680,7 @@
 		};
 		ED4A8DAB1D21B7E3009A3937 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AC8A0560BF908062266A6E0 /* Pods-BitterTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BitterTests/Info.plist;
@@ -443,6 +693,7 @@
 		};
 		ED4A8DAD1D21B7E3009A3937 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 832FDFE577637898116F9113 /* Pods-BitterUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = BitterUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -454,6 +705,7 @@
 		};
 		ED4A8DAE1D21B7E3009A3937 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762B997633154272DCE5D20C /* Pods-BitterUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = BitterUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -482,6 +734,7 @@
 				ED4A8DA81D21B7E3009A3937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED4A8DA91D21B7E3009A3937 /* Build configuration list for PBXNativeTarget "BitterTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +743,7 @@
 				ED4A8DAB1D21B7E3009A3937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED4A8DAC1D21B7E3009A3937 /* Build configuration list for PBXNativeTarget "BitterUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +752,7 @@
 				ED4A8DAE1D21B7E3009A3937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
