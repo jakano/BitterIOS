@@ -20,6 +20,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var followerNumLabel: UILabel!
     @IBOutlet weak var tweetNumLabel: UILabel!
     @IBOutlet weak var screennameLabel: UILabel!
+    @IBOutlet weak var infoLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,12 +30,14 @@ class ProfileViewController: UIViewController {
         let profileUrl = tweet.user!.profileUrl
         let screenname = tweet.user!.screenName
         let tweetCount = tweet.user!.statusCount
+        let info = tweet.user!.info
         profileImageView.setImageWithURL(profileUrl!)
         nameLabel.text = name
         followNumLabel.text = String(following)
         followerNumLabel.text = String(followers)
         screennameLabel.text = "@\(screenname!)"
         tweetNumLabel.text = String(tweetCount)
+        infoLabel.text = info
 
         // Do any additional setup after loading the view.
     }

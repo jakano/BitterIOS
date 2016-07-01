@@ -20,6 +20,7 @@ class User: NSObject {
     var followingCount: Int = 0
     var statusCount: Int = 0
     var profileBackgroundUrl: NSURL?
+    var tagline: String?
     
     init(dictionary: NSDictionary) {
         self.dictionary = dictionary
