@@ -12,7 +12,7 @@ class YourProfileViewController: UIViewController {
     
     var user: User!
 
-    //@IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var followingNumLabel: UILabel!
     @IBOutlet weak var followerNumLabel: UILabel!
@@ -31,7 +31,7 @@ class YourProfileViewController: UIViewController {
         let name = user.name
         let profileUrl = user.profileUrl
         let info = user.info
-        //let backGroundImageUrl = user.profileBackgroundUrl
+        var backGroundImageUrl = user.profileBackgroundUrl
         followerNumLabel.text = String(followerCount)
         followingNumLabel.text = String(followingCount)
         tweenNumLabel.text = String(tweetCount)
@@ -39,7 +39,13 @@ class YourProfileViewController: UIViewController {
         nameHandelView.text = name
         profileImageView.setImageWithURL(profileUrl!)
         infoLabel.text = info
-        //backgroundImageView.setImageWithURL(backGroundImageUrl!)
+        if backGroundImageUrl == nil {
+            backgroundImageView.hidden = true
+        } else {
+            print("got em 2")
+        
+        backgroundImageView.setImageWithURL(backGroundImageUrl!)
+        }
         
         
         

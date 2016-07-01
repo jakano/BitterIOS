@@ -21,6 +21,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var tweetNumLabel: UILabel!
     @IBOutlet weak var screennameLabel: UILabel!
     @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet weak var backgroundPictureView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,7 @@ class ProfileViewController: UIViewController {
         let screenname = tweet.user!.screenName
         let tweetCount = tweet.user!.statusCount
         let info = tweet.user!.info
+        var backgroundImageUrl = tweet.user!.profileBackgroundUrl
         profileImageView.setImageWithURL(profileUrl!)
         nameLabel.text = name
         followNumLabel.text = String(following)
@@ -38,6 +40,13 @@ class ProfileViewController: UIViewController {
         screennameLabel.text = "@\(screenname!)"
         tweetNumLabel.text = String(tweetCount)
         infoLabel.text = info
+        if backgroundImageUrl == nil {
+            backgroundPictureView.hidden = true
+        } else {
+            print("Got em")
+            backgroundPictureView.setImageWithURL(backgroundImageUrl!)
+        }
+
 
         // Do any additional setup after loading the view.
     }

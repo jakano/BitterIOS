@@ -37,10 +37,10 @@ class User: NSObject {
         followersCount = (dictionary["followers_count"] as? Int) ?? 0
         followingCount = (dictionary["friends_count"] as? Int) ?? 0
         statusCount = (dictionary["statuses_count"] as? Int) ?? 0
-        /*let profileBackgroundUrl = dictionary["profile_background_image_url"] as? String
-        if let profileBackgroundUrl = profileBackgroundUrl{
-            profileUrl = NSURL(string: profileBackgroundUrl)!
-        }*/
+        if let profileBackground = dictionary["profile_background_image_url_https"] as? String {
+            profileBackgroundUrl = NSURL(string: profileBackground)!
+        }
+        
 
         
         
