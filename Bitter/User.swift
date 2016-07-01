@@ -16,6 +16,9 @@ class User: NSObject {
     var profileUrl: NSURL?
     var info: String?
     var dictionary: NSDictionary?
+    var followersCount: Int = 0
+    var followingCount: Int = 0
+    var statusCount: Int = 0
     
     init(dictionary: NSDictionary) {
         self.dictionary = dictionary
@@ -26,6 +29,10 @@ class User: NSObject {
             profileUrl = NSURL(string: profileUlString)!
         }
         info = dictionary["description"] as? String
+        followersCount = (dictionary["followers_count"] as? Int) ?? 0
+        followingCount = (dictionary["friends_count"] as? Int) ?? 0
+        statusCount = (dictionary["statuses_count"] as? Int) ?? 0
+        
         
     }
     static var _currentUser: User?

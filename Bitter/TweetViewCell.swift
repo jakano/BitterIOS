@@ -15,6 +15,7 @@ class TweetViewCell: UITableViewCell {
     var retweetCounter = 0
     var favoriteCounter = 0
     
+    @IBOutlet weak var profileButton: UIButton!
     @IBOutlet weak var favoriteLabel: UILabel!
     @IBOutlet weak var retweetCounterLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!

@@ -45,6 +45,7 @@ class TweetsViewController: UIViewController, UITableViewDataSource, UITableView
             return 0
         }
     }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tweetTableView.dequeueReusableCellWithIdentifier("tweetCell", forIndexPath: indexPath) as! TweetViewCell
         let tweet = tweets![indexPath.row]
@@ -68,11 +69,13 @@ class TweetsViewController: UIViewController, UITableViewDataSource, UITableView
             cell.timeStampLabel.text = timeStampString?.substringToIndex(index1)
             
         }
+        
         cell.favoriteLabel.text = String(favoriteCount)
         cell.handleLabel.text = "@\(screenName)"
         cell.tweetLabel.text = text
         cell.nameLabel.text = name
         cell.retweetCounterLabel.text = String(retweetCounter)
+        cell.profileButton.tag = indexPath.row
         
     
         
@@ -94,8 +97,6 @@ class TweetsViewController: UIViewController, UITableViewDataSource, UITableView
         refreshControl.endRefreshing()
     }
 
-    @IBAction func onProfileButtonTap(sender: AnyObject) {
-    }
     
     
     
@@ -103,12 +104,21 @@ class TweetsViewController: UIViewController, UITableViewDataSource, UITableView
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let cell = sender as? UITableViewCell
-        let indexPath = tweetTableView.indexPathForCell(cell!)
-        let tweet = tweets![indexPath!.row]
-        print("prepare for segue")
-        let detailViewController = segue.destinationViewController as! DetailViewController
-        detailViewController.tweet = tweet
+        
+        if segue.identifier == "cellTapped" {
+            let cell = sender as? UITableViewCell
+            let indexPath = tweetTableView.indexPathForCell(cell!)
+            let tweet = tweets![indexPath!.row]
+            print("prepare for cell tweet")
+            let detailViewController = segue.destinationViewController as! DetailViewController
+            detailViewController.tweet = tweet
+        } else if segue.identifier == "pictureTapped" {
+            print("prepare for pick tweet")
+            let button = sender as! UIButton
+            let tweet = tweets[button.tag]
+            let destinationViewController = segue.destinationViewController as! ProfileViewController
+            destinationViewController.tweet = tweet
+        }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }

@@ -43,16 +43,81 @@
         <scene sceneID="yQK-aD-Gna">
             <objects>
                 <viewController id="bOG-Hn-zGw" customClass="ProfileViewController" customModule="Bitter" customModuleProvider="target" sceneMemberID="viewController">
-                    <button key="view" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UP9-FA-O9D">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="goI-f0-e7N"/>
+                        <viewControllerLayoutGuide type="bottom" id="yCN-sN-plR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tz9-zA-Jfh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" title="Button"/>
-                    </button>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ksN-Lg-KnH">
+                                <rect key="frame" x="25" y="79" width="324" height="167"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#Tweets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hh4-ih-Xb5">
+                                <rect key="frame" x="30" y="288" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#Followers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuP-0Q-a4u">
+                                <rect key="frame" x="261" y="288" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpf-3G-JZi">
+                                <rect key="frame" x="20" y="334" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vs9-lb-vVm">
+                                <rect key="frame" x="141" y="334" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HN4-vm-eMu">
+                                <rect key="frame" x="261" y="334" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#Following" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYV-PE-N5V">
+                                <rect key="frame" x="141" y="288" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUj-Km-azp">
+                                <rect key="frame" x="41" y="245" width="278" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLQ-85-fbm">
+                                <rect key="frame" x="41" y="40" width="295" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="followNumLabel" destination="Vs9-lb-vVm" id="Wyp-WN-mak"/>
+                        <outlet property="followerNumLabel" destination="HN4-vm-eMu" id="F5l-du-MkP"/>
+                        <outlet property="nameLabel" destination="MLQ-85-fbm" id="C7Y-ap-ShH"/>
+                        <outlet property="profileImageView" destination="ksN-Lg-KnH" id="Xnv-Ls-7PI"/>
+                        <outlet property="screennameLabel" destination="sUj-Km-azp" id="5lJ-fu-RLb"/>
+                        <outlet property="tweetNumLabel" destination="bpf-3G-JZi" id="aYI-rK-BbV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iZn-GW-gsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1408.5" y="1123.5"/>
+            <point key="canvasLocation" x="1433.5" y="1079.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Znl-S2-IKc">
@@ -125,7 +190,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="158" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sX6-oR-dXt" customClass="TweetTableView" customModule="Bitter" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="375" height="595"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetCell" rowHeight="158" id="KNh-j0-Opp" customClass="TweetViewCell" customModule="Bitter" customModuleProvider="target">
@@ -189,10 +254,9 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4a-xh-zc8">
-                                                    <rect key="frame" x="8" y="8" width="73" height="70"/>
-                                                    <state key="normal" title="Button"/>
+                                                    <rect key="frame" x="8" y="10" width="73" height="70"/>
                                                     <connections>
-                                                        <action selector="onProfileButtonTap:" destination="fKo-GX-pFu" eventType="touchUpInside" id="slW-l9-UmU"/>
+                                                        <segue destination="bOG-Hn-zGw" kind="show" identifier="pictureTapped" id="4Wq-e2-hmq"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -201,11 +265,12 @@
                                             <outlet property="favoriteLabel" destination="X24-Pn-lYM" id="dyQ-cW-sPD"/>
                                             <outlet property="handleLabel" destination="m6G-j2-hUj" id="uF8-z8-fhw"/>
                                             <outlet property="nameLabel" destination="hsf-pY-CrY" id="vFT-oy-7i7"/>
+                                            <outlet property="profileButton" destination="w4a-xh-zc8" id="HHV-uH-akf"/>
                                             <outlet property="profileImageView" destination="N3u-4e-bzX" id="aI8-UM-aTU"/>
                                             <outlet property="retweetCounterLabel" destination="RA2-NM-PYw" id="ycy-sp-aJ2"/>
                                             <outlet property="timeStampLabel" destination="abS-DC-csg" id="dqZ-ml-yKk"/>
                                             <outlet property="tweetLabel" destination="eyo-ej-X9w" id="5lL-xF-HOe"/>
-                                            <segue destination="Tsq-6i-iKw" kind="show" id="RPY-XC-Q34"/>
+                                            <segue destination="Tsq-6i-iKw" kind="show" identifier="cellTapped" id="RPY-XC-Q34"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -220,7 +285,7 @@
                                 <action selector="onLogOut:" destination="fKo-GX-pFu" id="wbM-U7-y7S"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="dFa-rV-vMv">
+                        <barButtonItem key="rightBarButtonItem" title="New" style="plain" id="dFa-rV-vMv">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hzV-we-YMI">
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -230,6 +295,9 @@
                                     <action selector="onNewTweet:" destination="fKo-GX-pFu" eventType="touchUpInside" id="K6m-Ab-J5Q"/>
                                 </connections>
                             </button>
+                            <connections>
+                                <segue destination="Va7-Aq-SOp" kind="show" id="2Nq-pL-fq8"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
