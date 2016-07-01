@@ -19,6 +19,7 @@ class User: NSObject {
     var followersCount: Int = 0
     var followingCount: Int = 0
     var statusCount: Int = 0
+    var profileBackgroundUrl: NSURL?
     
     init(dictionary: NSDictionary) {
         self.dictionary = dictionary
@@ -27,11 +28,19 @@ class User: NSObject {
         let profileUlString = dictionary["profile_image_url_https"] as? String
         if let profileUlString = profileUlString {
             profileUrl = NSURL(string: profileUlString)!
+            let modifiedProfileUrlString = profileUlString.stringByReplacingOccurrencesOfString("_normal", withString: "")
+            profileUrl = NSURL(string: modifiedProfileUrlString)
+
         }
         info = dictionary["description"] as? String
         followersCount = (dictionary["followers_count"] as? Int) ?? 0
         followingCount = (dictionary["friends_count"] as? Int) ?? 0
         statusCount = (dictionary["statuses_count"] as? Int) ?? 0
+        /*let profileBackgroundUrl = dictionary["profile_background_image_url"] as? String
+        if let profileBackgroundUrl = profileBackgroundUrl{
+            profileUrl = NSURL(string: profileBackgroundUrl)!
+        }*/
+
         
         
     }

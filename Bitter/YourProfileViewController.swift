@@ -12,6 +12,7 @@ class YourProfileViewController: UIViewController {
     
     var user: User!
 
+    //@IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var followingNumLabel: UILabel!
     @IBOutlet weak var followerNumLabel: UILabel!
     @IBOutlet weak var tweenNumLabel: UILabel!
@@ -28,12 +29,14 @@ class YourProfileViewController: UIViewController {
         let screename = user.screenName
         let name = user.name
         let profileUrl = user.profileUrl
+        //let backGroundImageUrl = user.profileBackgroundUrl
         followerNumLabel.text = String(followerCount)
         followingNumLabel.text = String(followingCount)
         tweenNumLabel.text = String(tweetCount)
         screennameView.text = "@\(screename!)"
         nameHandelView.text = name
         profileImageView.setImageWithURL(profileUrl!)
+        //backgroundImageView.setImageWithURL(backGroundImageUrl!)
         
         
         
