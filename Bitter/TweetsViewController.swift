@@ -27,8 +27,6 @@ class TweetsViewController: UIViewController, UITableViewDataSource, UITableView
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func onNewTweet(sender: AnyObject) {
-    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -71,7 +69,7 @@ class TweetsViewController: UIViewController, UITableViewDataSource, UITableView
         }
         
         cell.favoriteLabel.text = String(favoriteCount)
-        cell.handleLabel.text = "@\(screenName)"
+        cell.handleLabel.text = "@\(screenName!)"
         cell.tweetLabel.text = text
         cell.nameLabel.text = name
         cell.retweetCounterLabel.text = String(retweetCounter)

@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if User.currentUser != nil {
             print("Their is a current user")
             let storyoard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyoard.instantiateViewControllerWithIdentifier("TweetsNavigationController")
+            let vc = storyoard.instantiateViewControllerWithIdentifier("TweetsTabBarController")
             window?.rootViewController = vc
         } else {
             print("There is no current user")

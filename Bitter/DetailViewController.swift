@@ -30,7 +30,7 @@ class DetailViewController: UIViewController {
         let profileUrl = tweet.user!.profileUrl
         
         detailsNameLabel.text = name
-        detailsHandleLabel.text = "@\(screenName)"
+        detailsHandleLabel.text = "@\(screenName!)"
         detailsTweetLabel.text = tweetText
         detailsFavoriteCountLabel.text = String(favoriteCount)
         detailsRetweetCountLabel.text = String(retweetCount)

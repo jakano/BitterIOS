@@ -27,6 +27,7 @@
 		ED9896631D21DAD30012939D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9896621D21DAD30012939D /* User.swift */; };
 		ED9896651D21DAFB0012939D /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9896641D21DAFB0012939D /* Tweet.swift */; };
 		ED9896671D21E7940012939D /* TwitterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9896661D21E7940012939D /* TwitterClient.swift */; };
+		EDFAC4A91D26E13F00CCDC55 /* YourProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAC4A81D26E13F00CCDC55 /* YourProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		ED9896621D21DAD30012939D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ED9896641D21DAFB0012939D /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		ED9896661D21E7940012939D /* TwitterClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterClient.swift; sourceTree = "<group>"; };
+		EDFAC4A81D26E13F00CCDC55 /* YourProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 				ED98965F1D21C4920012939D /* View Controllers */,
 				ED4A8D811D21B7E3009A3937 /* AppDelegate.swift */,
 				ED4A8D851D21B7E3009A3937 /* Main.storyboard */,
+				EDFAC4A81D26E13F00CCDC55 /* YourProfileViewController.swift */,
 				ED4A8D881D21B7E3009A3937 /* Assets.xcassets */,
 				ED4A8D8A1D21B7E3009A3937 /* LaunchScreen.storyboard */,
 				ED4A8D8D1D21B7E3009A3937 /* Info.plist */,
@@ -501,6 +504,7 @@
 				ED9896631D21DAD30012939D /* User.swift in Sources */,
 				ED9896651D21DAFB0012939D /* Tweet.swift in Sources */,
 				ED98965E1D21C44D0012939D /* LoginViewController.swift in Sources */,
+				EDFAC4A91D26E13F00CCDC55 /* YourProfileViewController.swift in Sources */,
 				ED201C311D234263005888E6 /* TweetTableView.swift in Sources */,
 				ED4A8D841D21B7E3009A3937 /* ViewController.swift in Sources */,
 				ED201C2F1D231AFE005888E6 /* TweetsViewController.swift in Sources */,

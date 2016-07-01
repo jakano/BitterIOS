@@ -33,7 +33,7 @@ class ProfileViewController: UIViewController {
         nameLabel.text = name
         followNumLabel.text = String(following)
         followerNumLabel.text = String(followers)
-        screennameLabel.text = "@\(screenname)"
+        screennameLabel.text = "@\(screenname!)"
         tweetNumLabel.text = String(tweetCount)
 
         // Do any additional setup after loading the view.
