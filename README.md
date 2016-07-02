@@ -46,8 +46,7 @@ Here's a walkthrough of implemented user stories:
 
 ## Notes
 
-Describe any challenges encountered while building the app.
-
+Understandng RESTful API without having experience working with it was a huge hurdle for me. After implementing the GET and POST funtctions however, it began to click and I understood it alot more. Same with auto layout.
 ## Credits
 
 List an 3rd party libraries, icons, graphics, or other assets you used in your app.
